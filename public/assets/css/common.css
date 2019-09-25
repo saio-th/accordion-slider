@@ -1,0 +1,269 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700&display=swap&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: top;
+  font-size: 0;
+  line-height: 0;
+}
+
+*, *:before, *:after {
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type="button"],
+input[type="submit"],
+textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+select {
+  border-radius: 0;
+}
+
+a,
+input,
+label {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fwb {
+  font-weight: bold !important;
+}
+
+.fwn {
+  font-weight: normal !important;
+}
+
+.tac {
+  text-align: center !important;
+}
+
+.tal {
+  text-align: left !important;
+}
+
+.tar {
+  text-align: right !important;
+}
+
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+/*--------------------------------------------
+変数
+---------------------------------------------*/
+/*--------------------------------------------
+標準設定
+---------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Quicksand", "Noto Sans JP", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  padding: 3% 5%;
+}
+
+.header .ttl-01 {
+  font-size: 2rem;
+}
+
+.contents {
+  max-width: 960px;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 3% 5%;
+}
+
+.footer .copyright {
+  font-size: .8rem;
+}
+
+.header .ttl-01 {
+  color: #233567;
+}
+
+.footer .copyright {
+  color: #233567;
+}
+
+/*----------------------------------------------------------
+form系のリセット（デフォルトスタイルで使いたい場合は削除）
+----------------------------------------------------------*/
+button {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/*----------------------------------------------------------
+アコーディオンスライダー
+----------------------------------------------------------*/
+.slider-wrap {
+  width: 100%;
+  height: 300px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.slider-wrap .slider {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrap .slider .index {
+  width: 50px;
+  height: 100%;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #233567;
+  background: #315b96;
+  border-radius: 25px;
+}
+
+.slider-wrap .slider .index span {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.slider-wrap .slider .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #233567;
+  font-weight: bold;
+  width: calc(100% - 40px);
+  border-radius: 25px;
+  background: #ffdfdf;
+  transition: width .7s;
+}
+/*# sourceMappingURL=maps/common.css.map */
