@@ -12,7 +12,7 @@ $radius-width: 25px;
 
 
 /*--------------------------------------------
-標準設定
+デフォルト設定
 ---------------------------------------------*/
 *{
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
   color: #333;
   font-size: 14px;
   line-height: 1.4;
-	font-family: $font;
+	font-family: $ff;
   text-align: center;
   background-color: $bg;
   -webkit-font-smoothing: antialiased;

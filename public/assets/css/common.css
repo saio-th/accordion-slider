@@ -144,14 +144,26 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-  .sp {
+  .pc {
+    display: block;
+  }
+  .pc-dib {
+    display: inline-block;
+  }
+  .sp, .sp-dib {
     display: none !important;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .pc {
+  .pc, .pc-dib {
     display: none !important;
+  }
+  .sp {
+    display: block;
+  }
+  .sp-dib {
+    display: inline-block;
   }
 }
 
@@ -159,7 +171,7 @@ label {
 変数
 ---------------------------------------------*/
 /*--------------------------------------------
-標準設定
+デフォルト設定
 ---------------------------------------------*/
 * {
   box-sizing: border-box;

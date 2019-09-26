@@ -7,7 +7,7 @@
 //    基本設定
 //============================================================
 // フォント
-$font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", 'Quicksand', 'Noto Sans JP', "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+$ff: -apple-system, BlinkMacSystemFont, "Helvetica Neue", 'Quicksand', 'Noto Sans JP', "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 $f-noto: 'Noto Sans JP', sans-serif;
 $f-qsand : 'Quicksand', sans-serif;
 
@@ -32,12 +32,26 @@ $ease: cubic-bezier(0.215, 0.61, 0.355, 1);
 
 // PC、SPでの表示切替
 @media screen and (min-width: $w-sp + 1) {
-  .sp {
+  .pc{
+    display: block;
+  }
+  .pc-dib{
+    display: inline-block;
+  }
+  .sp, .sp-dib {
     display: none!important;
   }
 }
+
+
 @media screen and (max-width: $w-sp) {
-  .pc {
+  .pc, .pc-dib {
     display: none!important;
+  }
+  .sp{
+    display: block;
+  }
+  .sp-dib{
+    display: inline-block;
   }
 }
